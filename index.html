@@ -2,23 +2,56 @@
 <head>
 <title>My APK Store</title>
 <style>
-body{
-background:#111;
-color:white;
-font-family:Arial;
-text-align:center;
+body {
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.app{
-margin:30px;
-padding:20px;
-background:#222;
-border-radius:10px;
+h1 {
+  padding: 20px;
+  font-size: 36px;
 }
 
-button{
-font-size:20px;
-padding:10px 25px;
+.store {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.app {
+  background: #1e1e1e;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.app:hover {
+  transform: scale(1.05);
+}
+
+.app img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2563eb;
 }
 </style>
 </head>
@@ -27,11 +60,26 @@ padding:10px 25px;
 
 <h1>My APK Store</h1>
 
+<div class="store">
+
+<!-- Custom IBO Tile -->
 <div class="app">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Apk_icon.png/180px-Apk_icon.png" alt="Custom IBO">
 <h2>Custom IBO</h2>
 <a href="https://www.dropbox.com/scl/fi/au9f046i3u4hkfamuogco/Custom-IBO_4.3.apk?rlkey=ncfakeyfsgn01v9y4xgxeda48&st=ncoamxff&dl=1">
 <button>Install</button>
 </a>
+</div>
+
+<!-- TiviMate Tile -->
+<div class="app">
+<img src="https://play-lh.googleusercontent.com/Xb_YvFSmO8e3KQvWzRLpWqawD8Rtk4KjGnlWvNx3gAhFvh8R-CXeP2v5fEJ7mE_6Bz8=s180" alt="TiviMate">
+<h2>TiviMate</h2>
+<a href="https://apkz.tv/CTIVI51">
+<button>Install</button>
+</a>
+</div>
+
 </div>
 
 </body>
